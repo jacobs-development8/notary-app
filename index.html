@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notary</title>
+</head>
+<body>
+    <div class="col-1">
+        <div id="book-window">
+            <div>
+                <h1 id="book-title" class="info-heading">Example Book</h1>
+            </div>
+            
+
+            <p id="book-content"></p>
+
+            <p class="info-heading footer">T&J Web Solutions</p>
+        </div>
+    </div>
+
+    <div class="col-2"> 
+
+        <div class="info-container">
+            <p class="info-heading">Search</p>
+
+            <form id="bookSearchForm">
+                <input name="word" type="text" placeholder="Search for...">
+                <input type="submit">
+            </form>
+
+            <p id="searchWordCount"></p>
+        </div>
+
+        <div class="info-container">
+            <p class="info-heading">Select a Book</p>
+
+            <ul class="list">
+                <li><button data-book="Dracula">Dracula</button></li>
+                <li><button data-book="Moby Dick; Or, The Whale">Moby Dick; Or, The Whale.txt</button></li>
+                <li><button data-book="Oliver Twist">Oliver Twist</button></li>
+                <li><button data-book="The Great Gatsby">The Great Gatsby</button></li>
+            </ul>
+        </div>
+
+        <div class="info-container">
+            <p class="info-heading">Most Used Words</p>
+
+            <ul id="mostUsedWords" class="list">
+ 
+            </ul>
+        </div>
+
+        <div class="info-container">
+            <p class="info-heading">Least Used Words</p>
+
+            <ul id="leastUsedWords" class="list">
+
+            </ul>
+        </div>
+
+        <div class="info-container">
+            <p class="info-heading">Document Stats</p>
+            <p id="wordCount">Word Count: 200</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

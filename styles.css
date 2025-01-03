@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --primary: #fff;
+    --secondary:  #f8f6f8;
+    --border-bottom:  #ececec;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(160deg, #0093E9, #80D0C7);
+    padding: 4rem;
+}
+
+.col-1{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#book-window{
+    height: 30rem;
+    width: 35rem;
+}
+
+#book-title{
+    font-size: 1.5rem;
+}
+
+.info-heading{
+    padding: 0.4rem 1rem;
+    background: var(--secondary);
+    border-bottom: var(--border-bottom) solid 3px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #000;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    border-top: var(--border-bottom) solid 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#book-content{
+    height: 80%;
+    background: var(--primary);
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+.info-container{
+    background: var(--primary);
+    width: 20rem;
+    margin-bottom: 0.7rem;
+    border-radius: 7px;
+}
+
+.info-container p{
+    font-weight: bold;
+}
+
+.info-container form{
+    margin: 0.5rem;
+}
+
+.info-container form input{
+    height: 2rem;
+    border: var(--secondary) solid 2px;
+    border-radius: 5px;
+}
+
+.info-container form input[type="text"]:focus{
+    border: var(--border-bottom) solid 2px; 
+    outline: var(--border-bottom);
+}
+
+.info-container form input[type="submit"]{
+    background: #69727b;
+    color: white;
+    font-weight: bold;
+    padding-inline: 0.75rem;
+    cursor: pointer;
+}
+
+.info-container .list{
+    list-style: none;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-weight: normal;
+}
+
+.list button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #0093E9;
+    cursor: pointer;
+}
+
+#wordCount{
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+#searchWordCount{
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+.yellow{
+    background: black;
+}
